@@ -1,0 +1,12 @@
+<div class='row'>
+  <div class='container'>
+    <div class='col-md-12'>
+      <h1> Edit idea </h1>
+      <form action="/update/<%= @i.id %>">
+        <input name="name" type="text" value=<%= @i.name %>>
+        <input name="desc" type="text" value=<%= @i.desc %>>
+        <input type="submit">
+      </form>
+    </div>
+  </div>
+</div>

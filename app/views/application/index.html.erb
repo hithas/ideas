@@ -1,0 +1,21 @@
+
+<% @ideas.each do |idea| %>
+ <div class='row'>
+  <div class='container'>
+    <div class='col-md-12'>
+        <h2> <a href='ideas/<%= idea.id %>'> <%= idea.name %> </a></h2> <a href = '/ideas/<%= idea.id %>/edit'> Edit </a> <span> | </span>
+<a href = '/ideas/<%= idea.id %>/delete'> Delete </a>
+        <p> <%= idea.desc %> </p>
+       </div>
+    </div>
+  </div>
+<% end %>
+<br/>
+<br/>
+<div class='container'>
+  <div class = 'row'>
+    <div class='col-md-12'>
+      <a href='/new'><b>Create New</b></a>
+    </div>
+  </div>
+</div>
